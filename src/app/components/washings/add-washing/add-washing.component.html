@@ -6,6 +6,7 @@
 
 <!-- Form -->
 <div class="inner-wrapper">
+  
   <form [formGroup]="washingForm" (ngSubmit)="submitWashingForm()" #resetWashingForm="ngForm" novalidate>
     <!-- Left block -->
     <mat-card>
@@ -32,6 +33,15 @@
     <!-- Right block -->
     <mat-card>
       <div class="controlers-wrapper">
+        <mat-form-field>
+          <mat-label>Customer</mat-label>
+          <mat-select [(value)]="selectable" formControlName="customer">
+            <mat-option [value]="customer.name" *ngFor="let customer of CustomerData">{{customer.name}}
+            </mat-option>
+          </mat-select>
+          <mat-error *ngIf="handleError('customer', 'required')"> Customer is required </mat-error>
+        </mat-form-field>
+        
         <mat-form-field>
           <mat-label>Utensil</mat-label>
           <mat-select [(value)]="selectable" formControlName="utensil">
