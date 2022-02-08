@@ -1,0 +1,45 @@
+<!-- Toolbar -->
+<mat-toolbar color="primary" class="header">
+  <div>Student Records</div>
+  <span class="nav-tool-items">
+    <mat-icon (click)="sidenav.toggle()" class="hamburger">menu</mat-icon>
+  </span>
+</mat-toolbar>
+
+<mat-sidenav-container>
+  <!-- Sidenav -->
+  <mat-sidenav #sidenav [mode]="isBiggerScreen() ? 'over' : 'side'" [(opened)]="opened" [fixedInViewport]="true"
+    [fixedTopGap]>
+    <mat-nav-list>
+      <a mat-list-item routerLinkActive="active" routerLink="/add-student">
+        <mat-icon>add</mat-icon> Create Student
+      </a>
+      <a mat-list-item routerLinkActive="active" routerLink="/students-list">
+        <mat-icon>format_list_bulleted</mat-icon> View Students
+      </a>
+      <a mat-list-item routerLinkActive="active" routerLink="/add-utensil">
+        <mat-icon>add</mat-icon> Create Utensil
+      </a>
+      <a mat-list-item routerLinkActive="active" routerLink="/utensils-list">
+        <mat-icon>format_list_bulleted</mat-icon> View Utensils
+      </a>
+      <a mat-list-item routerLinkActive="active" routerLink="/add-washing">
+        <mat-icon>add</mat-icon> Add Washing
+      </a>
+      <a mat-list-item routerLinkActive="active" routerLink="/washings-list">
+        <mat-icon>format_list_bulleted</mat-icon> View Washings
+      </a>
+      <a mat-list-item routerLinkActive="active" routerLink="/add-customer">
+        <mat-icon>add</mat-icon> Create Customer
+      </a>
+      <a mat-list-item routerLinkActive="active" routerLink="/customers-list">
+        <mat-icon>format_list_bulleted</mat-icon> View Customers
+      </a>
+    </mat-nav-list>
+  </mat-sidenav>
+
+  <!-- Main content -->
+  <mat-sidenav-content>
+    <router-outlet></router-outlet>
+  </mat-sidenav-content>
+</mat-sidenav-container>
