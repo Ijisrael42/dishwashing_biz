@@ -19,6 +19,7 @@ import { MatTableModule } from '@angular/material/table';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatTooltipModule } from '@angular/material/tooltip';
 import {MatStepperModule} from '@angular/material/stepper';
+import {MatAutocompleteModule} from '@angular/material/autocomplete';
 
 @NgModule({
    imports: [
@@ -40,7 +41,8 @@ import {MatStepperModule} from '@angular/material/stepper';
       MatTooltipModule,
       MatTableModule,
       MatPaginatorModule,
-      MatStepperModule
+      MatStepperModule,
+      MatAutocompleteModule
    ],
    exports: [
       MatButtonModule,
@@ -59,7 +61,8 @@ import {MatStepperModule} from '@angular/material/stepper';
       MatTooltipModule,
       MatTableModule,
       MatPaginatorModule,
-      MatStepperModule
+      MatStepperModule,
+      MatAutocompleteModule
    ],
    providers: [
       MatDatepickerModule,

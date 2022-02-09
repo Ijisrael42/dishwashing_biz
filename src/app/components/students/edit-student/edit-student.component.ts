@@ -31,12 +31,8 @@ export class EditStudentComponent implements OnInit {
     this.updateBookForm();
   }
 
-  constructor(
-    public fb: FormBuilder,
-    private router: Router,
-    private ngZone: NgZone,
-    private actRoute: ActivatedRoute,
-    private studentApi: ApiService
+  constructor( public fb: FormBuilder, private router: Router, private ngZone: NgZone,
+    private actRoute: ActivatedRoute, private studentApi: ApiService
   ) { 
     var id = this.actRoute.snapshot.paramMap.get('id');
     this.studentApi.GetStudent(id).subscribe(data => {

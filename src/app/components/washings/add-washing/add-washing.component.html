@@ -35,7 +35,7 @@
       <div class="controlers-wrapper">
         <mat-form-field>
           <mat-label>Customer</mat-label>
-          <mat-select [(value)]="selectable" formControlName="customer">
+          <mat-select [(value)]="selectableCustomer" formControlName="customer">
             <mat-option [value]="customer.name" *ngFor="let customer of CustomerData">{{customer.name}}
             </mat-option>
           </mat-select>
@@ -44,7 +44,7 @@
         
         <mat-form-field>
           <mat-label>Utensil</mat-label>
-          <mat-select [(value)]="selectable" formControlName="utensil">
+          <mat-select [(value)]="selectableUtensil" formControlName="utensil">
             <mat-option [value]="utensil.name" *ngFor="let utensil of UtensilData">{{utensil.name}}
             </mat-option>
           </mat-select>
@@ -62,4 +62,6 @@
       </div>
     </mat-card>
   </form>
+
+  
 </div>
