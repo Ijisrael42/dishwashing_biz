@@ -12,8 +12,5 @@ Start Angular app & install required dependencies
 - run `npm install`
 - run `nodemon` 
 
-## Start MongoDB
-
-- mongod --config /usr/local/etc/mongod.conf
-- brew services start mongodb-community@4.2
-- mongo
+## MongoDB 
+- MongoDB Atlas
