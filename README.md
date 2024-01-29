@@ -1,4 +1,4 @@
-# Dish Wasshing Biz
+# Dish Washing Biz
 
 ## Start MEAN Stack App
 Start Angular app & install required dependencies
