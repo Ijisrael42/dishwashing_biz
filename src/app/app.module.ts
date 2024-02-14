@@ -4,9 +4,6 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
 /* Angular 8 components */
-import { AddStudentComponent } from './components/students/add-student/add-student.component';
-import { EditStudentComponent } from './components/students/edit-student/edit-student.component';
-import { StudentsListComponent } from './components/students/students-list/students-list.component';
 
 /* Angular material */
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -35,9 +32,6 @@ import { EditCustomerComponent } from './components/customers/edit-customer/edit
 @NgModule({
   declarations: [
     AppComponent,
-    AddStudentComponent,
-    EditStudentComponent,
-    StudentsListComponent,
     UtensilsListComponent,
     AddUtensilComponent,
     EditUtensilComponent,
